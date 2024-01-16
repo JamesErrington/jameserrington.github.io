@@ -1,0 +1,8 @@
+<ul class="post-list">
+  {% for post in collections.blog %}
+    <li class="post-list__item">
+	  <p class="post-list__date">{{ post.date | readableDate }}</p>
+	  <h3 class="post-list__title">{{ post.data.title }}</h3>
+    </li>
+  {% endfor %}
+</ul>

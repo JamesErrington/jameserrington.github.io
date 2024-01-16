@@ -1,0 +1,21 @@
+{
+	"name": "James Errington",
+	"author": {
+		"name": "James Errington",
+		"email": "james.errington@protonmail.com",
+		"github": "JamesErrington"
+	},
+	"repo": "https://github.com/JamesErrington/jameserrington.github.io",
+	"headerLinks": [
+    {
+      "text": "Blog",
+      "url": "/blog",
+      "external": false
+    },
+    {
+      "text": "About",
+      "url": "/",
+      "external": false
+    }
+  ]
+}

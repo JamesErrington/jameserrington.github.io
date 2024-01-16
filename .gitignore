@@ -1,0 +1,6 @@
+# Obsidian settings
+.obsidian/
+# Generated artifacts
+_site/
+# macOS
+.DS_STORE

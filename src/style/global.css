@@ -47,17 +47,6 @@ object {
   display: block;
 }
 
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
 hr {
   width: 100%;
   border: none;
@@ -140,10 +129,8 @@ h4 + p {
   margin-top: 1rem;
 }
 
-iframe,
 audio,
-video,
-img {
+video {
   width: 100%;
   max-width: 100%;
   margin-top: 1rem;

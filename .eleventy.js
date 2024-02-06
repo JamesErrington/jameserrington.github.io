@@ -29,13 +29,16 @@ module.exports = function (eleventyConfig) {
 		return Array.from(tagSet);
 	});
 
+	eleventyConfig.addPassthroughCopy("src/img");
+
   return {
   	dir: {
    		input: "src",
-     output: "_site",
-     data: "data",
-     layouts: "layouts",
-     includes: "include",
+      output: "_site",
+      data: "data",
+      layouts: "layouts",
+      includes: "include",
     },
+    passthroughFileCopy: true,
   }
 }

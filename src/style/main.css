@@ -17,10 +17,6 @@
   width: 100%;
 }
 
-.blog-title {
-	margin-bottom: 2rem;
-}
-
 .not-found {
   display: grid;
   place-items: center;
@@ -33,4 +29,8 @@
 .not-found p {
   font-size: var(--text-xl);
   text-align: center;
+}
+
+.blog-title {
+	margin-bottom: 1rem;
 }

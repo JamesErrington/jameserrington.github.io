@@ -130,6 +130,10 @@ td:only-child {
   margin-top: 3rem;
 }
 
+* + p {
+  margin-top: 2rem;
+}
+
 h2 + p,
 h3 + p,
 h4 + p {

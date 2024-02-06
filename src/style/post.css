@@ -5,10 +5,15 @@
 }
 
 .post > * + * {
-  margin-top: 4rem;
+  margin-top: 1rem;
+}
+
+.post__header {
+	margin-bottom: 0.5rem;
 }
 
 .post__details {
+  margin-top: 0.25rem;
   opacity: 0.6;
   font-size: 0.9rem;
 }

@@ -1,0 +1,6 @@
+<div class="tags">
+	{%- for tag in tagList -%}
+		{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		<a href="{{ tagUrl | url }}" class="post-tag">#{{ tag }}</a>
+	{%- endfor -%}
+</div>

@@ -34,7 +34,6 @@ body::-webkit-scrollbar-thumb {
   border-width: 0;
   border-color: currentColor;
   margin: 0;
-  padding: 0;
 }
 
 img,
@@ -116,11 +115,12 @@ td:only-child {
 * + h3,
 * + h4,
 * + h5 {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 * + p {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 h2 + p,
@@ -212,4 +212,8 @@ mark {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+ul {
+	padding-inline-start: 20px;
 }

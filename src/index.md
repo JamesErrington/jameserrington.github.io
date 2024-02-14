@@ -19,4 +19,10 @@ I studied both undergraduate and masters degrees in Computer Science at the Univ
 
 Outside of programming I am a keen orienteer and world traveller, a scout leader, and a fan of cricket and football.
 
-You can find my GitHub page [here](https://github.com/JamesErrington).
+### Example work
+
+- [zig-tetris](https://jameserrington.github.io/zig-tetris/): Tetris implemented in Zig, compiled as both a native app via SDL and onto HTML5 Canvas via WASM - [Source](https://github.com/JamesErrington/zig-tetris).
+- [lazy-iterable](https://jameserrington.github.io/lazy-iterable/): Typescript library for Haskell-style lazy-evaluation of data structures, built in 100% native Javascript - [Source](https://github.com/JamesErrington/lazy-iterable).
+- [css-parser](https://github.com/JamesErrington/css-parser): Basic CSS parser written in Go, designed to mimic the W3C specification.
+
+You can find my full GitHub page [here](https://github.com/JamesErrington).

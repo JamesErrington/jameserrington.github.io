@@ -26,3 +26,9 @@ Outside of programming I am a keen orienteer and world traveller, a scout leader
 - [css-parser](https://github.com/JamesErrington/css-parser): Basic CSS parser written in Go, designed to mimic the W3C specification.
 
 You can find my full GitHub page [here](https://github.com/JamesErrington).
+
+### Latest post
+<a href="{{ collections.blog[0].url | url }}">
+  	<span>{{ collections.blog[0].data.title }}</span>
+	<span>→</span>
+</a>

@@ -4,6 +4,8 @@ summary: Quick notes on the creation of the blog
 date: 2024-02-06
 tags:
   - coding
+  - 11ty
+  - github
 layout: post
 ---
 One thing I have been trying to get better at over the past 6 months or so is making notes about everything I learn or try out - this not only helps solidify the knowledge, but allows for me to potentially write things up later, and can be useful when coming back to maintain things later down the line. To that end, here are some quick notes on how I made this site, for future reference.

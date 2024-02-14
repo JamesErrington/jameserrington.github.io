@@ -1,0 +1,8 @@
+{
+  "scripts": {
+  		"serve": "npx @11ty/eleventy --serve"
+  },
+	"devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}

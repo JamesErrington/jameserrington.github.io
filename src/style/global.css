@@ -150,7 +150,8 @@ pre {
   font-size: 0.95rem;
   border: 1px solid color-mod(var(--color) a(10%));
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 code,
@@ -220,5 +221,5 @@ ul {
 
 .img__full-width {
 	width: 100%;
-	margin: 1rem 0;
+	margin: 1rem auto;
 }

@@ -12,11 +12,13 @@ I've recently been playing around with Web Assembly, inspired by [Tsoding's snak
 
 Here are some notes on making a simple Tetris clone in Zig, that can be compiled to run as both a native app via SDL2, and a web app via WASM. You can test the [web version here](https://jameserrington.github.io/zig-tetris/) - it's basic, but it works.
 
+<img src="{{ '/img/tetris.png' | url }}" class="img__full-width" style="width: 80%;" />
+
 ### Zig setup
 
 I used [Zig](https://ziglang.org/) for this project as it is a language I am enjoying writing a lot at the moment. I have also used C for WASM, and you may well be able to use Go or Rust (I am not sure about how well they work without Emscripten).
 
-I first started with the SDL version of the game. Following Andrew Kelley's own [zig-sdl-demo](https://github.com/andrewrk/sdl-zig-demo) , I made the change from relying on Andrew's Zig-SDL2 package and instead just link the system library (this of course requires SDL2 to be installed on your system). The Zig build system really comes into its own here, saving the need for complex Makefiles or CMakeLists in favour just... writing some Zig code:
+I first started with the SDL version of the game. Following Andrew Kelley's own [zig-sdl-demo](https://github.com/andrewrk/sdl-zig-demo), I made the change from relying on Andrew's Zig-SDL2 package and instead just link the system library (this of course requires SDL2 to be installed on your system). The Zig build system really comes into its own here, saving the need for complex Makefiles or CMakeLists in favour just... writing some Zig code:
 
 ```zig
 const std = @import("std");
@@ -24,7 +26,7 @@ const std = @import("std");
 pub fn build(b: *std.Build) void {
 	const target = b.standardTargetOptions(.{});
 	const optimize = b.standardOptimizeOption(.{});
-	
+
 	const exe = b.addExecutable(.{
 		.name = "main",
 		.root_source_file = .{ .path = "src/main.zig" },
@@ -34,7 +36,7 @@ pub fn build(b: *std.Build) void {
 	// The important bit - we link the system version of SDL2, and libC
 	exe.linkSystemLibrary("sdl2");
 	exe.linkLibC();
-	
+
 	b.installArtifact(exe);
 }
 ```
@@ -99,7 +101,7 @@ pub fn build(b: *std.Build) void {
 	});
 	// Important! This must be set in order to export the symbols
 	lib.rdynamic = true;
-	
+
 	b.installArtifact(lib);
 }
 ```
@@ -160,7 +162,7 @@ window.document.body.onload = function() {
 	WebAssembly
 		.instantiateStreaming(fetch("zig-out/lib/game.wasm"), imports)
 		.then(source => {
-			// Our exported Zig functions can be found in 
+			// Our exported Zig functions can be found in
 			// source.instance.exports
 			// e.g source.instance.exports.Game_Init()
 		})

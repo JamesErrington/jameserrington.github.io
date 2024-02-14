@@ -1,3 +1,5 @@
+# NPM dependencies
+node_modules
 # Obsidian settings
 .obsidian/
 # Generated artifacts

@@ -1,4 +1,8 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 module.exports = function (eleventyConfig) {
+	eleventyConfig.addPlugin(syntaxHighlight);
+
 	eleventyConfig.addFilter("readableDate", dateObj => {
 		return new Date(dateObj).toLocaleDateString("en-uk", { month: "short", day: "numeric", year: "numeric" });
   });

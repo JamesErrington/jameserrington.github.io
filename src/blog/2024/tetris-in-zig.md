@@ -12,7 +12,7 @@ I've recently been playing around with Web Assembly, inspired by [Tsoding's snak
 
 Here are some notes on making a simple Tetris clone in Zig, that can be compiled to run as both a native app via SDL2, and a web app via WASM. You can test the [web version here](https://jameserrington.github.io/zig-tetris/) - it's basic, but it works.
 
-<img src="{{ '/img/tetris.png' | url }}" class="img__full-width" style="width: 80%;" />
+<img src="{{ '/img/tetris.png' | url }}" style="width: 80%; margin: 1rem auto;" />
 
 ### Zig setup
 
@@ -181,7 +181,7 @@ Perhaps in the future I could integrate a Zig HTTP server as part of the build p
 
 As I have been using GitHub to host the repository it's easy to host the site publicly by simply enabling GitHub pages on the master branch:
 
-<img src="{{ '/img/github-pages.png' | url }}" class="img__full-width" />
+<img src="{{ '/img/github-pages.png' | url }}" style="width: 100%; margin: 1rem auto;" />
 
 ### Summary
 
